@@ -19,8 +19,20 @@ console.log(data.toString());
 console.log("Finishing Reading File"); 
 
 
+console.log();
 //Write File
-const value = "This is Data.txt file Content";
-fs.writeFile("data.txt", value, (err,data)=>{
-    console.log(err);
-})
+// const value = "This is Data.txt file Content";
+// fs.writeFile("data.txt", value, (err,data)=>{
+//     console.log(value);
+//     console.log(err);
+// })
+// console.log("File Writing Successfully");
+
+
+
+//Write FileSync
+const value2 = "This is Data2.txt file Content"
+const b = fs.writeFileSync("data2.txt", value2);
+console.log(b);
+console.log("File Writing Successfully");
+
