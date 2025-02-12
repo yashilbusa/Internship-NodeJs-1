@@ -8,7 +8,6 @@ fs.appendFile("example.txt", "Yashil Busa", (err) => {
         console.log(err);
     }
     else {
-
         console.log("\nFile Contents of file after append :",
         fs.readFileSync("example.txt", "utf8"));
     }
