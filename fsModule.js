@@ -19,3 +19,8 @@ console.log(data.toString());
 console.log("Finishing Reading File"); 
 
 
+//Write File
+const value = "This is Data.txt file Content";
+fs.writeFile("data.txt", value, (err,data)=>{
+    console.log(err);
+})
