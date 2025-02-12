@@ -13,7 +13,6 @@ const fs = require('fs');
 
 
 
-
 // Without Non Blocking IO Model we use readfileSync
 const data = fs.readFileSync('file.txt');
 console.log(data.toString());
