@@ -14,8 +14,8 @@ console.log("Finishing Reading File");
 
 console.log();
 //Write File
-const value = "This is WriteFile.txt file Content";
-fs.writeFile("writeFile.txt", value, { flag: "a"}, (err,data)=>{
+const value = "This is WriteFile.txt file Content.";
+fs.writeFile("writeFile.txt", value, { flag: "w"}, (err,data)=>{
     console.log(value);     //This is WriteFile.Txt file Content
     console.log(err);       //null
 })
