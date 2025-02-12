@@ -1,9 +1,9 @@
 const fs = require("fs");
 
-fs.open("readFile.txt", "w", function (err, fd) {
+fs.open("readFile.txt", "r", function (err, data) {
     if (err) {
         return console.error(err);
     }
-    console.log(fd);
+    console.log(data);
     console.log("File open successfully");
 });

@@ -5,7 +5,7 @@ const fs = require('fs');
 // the console then print file data
 
 fs.readFile('readFile.txt' , 'utf8' , (err,data)=>{
-    console.log(data);      //This is File.Txt File
+    console.log(data);      //This is ReadFile.Txt File
     console.log(err);       //null
 })
 console.log("Finishing Reading File"); 
