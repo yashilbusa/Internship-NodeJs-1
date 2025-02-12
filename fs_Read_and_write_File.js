@@ -4,7 +4,7 @@ const fs = require('fs');
 // It will read file but it will also not blocking remaing code so it will print first 
 // the console then print file data
 
-fs.readFile('file.txt' , 'utf8' , (err,data)=>{
+fs.readFile('readFile.txt' , 'utf8' , (err,data)=>{
     console.log(data);      //This is File.Txt File
     console.log(err);       //null
 })
@@ -14,9 +14,9 @@ console.log("Finishing Reading File");
 
 console.log();
 //Write File
-const value = "This is Data.txt file Content";
-fs.writeFile("data.txt", value, (err,data)=>{
-    console.log(value);     //This is Data.Txt file Content
+const value = "This is WriteFile.txt file Content";
+fs.writeFile("writeFile.txt", value, (err,data)=>{
+    console.log(value);     //This is WriteFile.Txt file Content
     console.log(err);       //null
 })
 console.log("File Writing Successfully");
