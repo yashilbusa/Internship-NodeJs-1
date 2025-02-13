@@ -1,7 +1,7 @@
 const fs = require('fs');
 
-const read = fs.createReadStream('largFile.txt');
+const read = fs.createReadStream('largeFile.txt');
 
-read.on('data',(data)=>{
-    console.log(data.toString());
+read.on('data',(chunk)=>{
+    console.log(chunk.toString());
 })
