@@ -1,5 +1,5 @@
 const fs = require('fs'); 
 
-const writer = fs.createWriteStream('test_gfg.txt') 
+const writer = fs.createWriteStream('sample.txt') 
 
-writer.write('GeeksforGeeks');
+writer.write('Hello Yashil From InnovateMR');
